@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #222;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span{
+    color: yellow;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    /* margin: 10px; */
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+    transition: .4s;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+select{
+    width: 20%;
+    height: 37px;
+    outline: none;
+    border: none;
+    background-color: #111;
+    margin: 4px;
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+    transition: .4s;
+}
+select:focus{
+    background-color: #000;
+}
+.price input{
+    width: 21%;
+}
+.first input{
+    width: 51%;
+    
+}
+.second input{
+    width: 25%;
+}
+#total{
+    background-color: #b40808;
+    padding: 4px 2px;
+    border-radius: 5px;
+    font-weight:bolder ;
+}
+#total::before{
+    content: "Total: ";
+}
+button{
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: #6f42c1;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    transition: .5s;
+}
+button:hover{
+    background-color: #28a745;
+    letter-spacing: 2px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+
+}
+.btnsearch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: capitalize;
+}
+td,th{
+    padding: 5px;
+}
+#delete{
+    border: none;
+    background-color: #b40808;
+    transition: .5s;
+}
+#delete:hover{
+    background-color: #dc3545;
+    box-shadow: 0 0 5px black, 4px 2px 5px black;
+    transform: scale(1.1);
+    letter-spacing: .5px;
+
+}
+#update{
+    border: none;
+    background-color: #28a745;
+    transition: .5s;
+}
+#update:hover{
+    background-color: #00761b;
+    box-shadow: 0 0 5px black, 4px 2px 5px black;
+    transform: scale(1.1);
+    letter-spacing: .5px;
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>Land<span>Club</span></h2>
+            <p>create by eslam ahmed</p>
+        </div>
+        <div class="inputs">
+            <div class="first">
+                <input type="text" id="name" placeholder="Full Name">
+                
+            </div>
+            <div class="second">
+                <input type="text" id="id" placeholder="National ID">
+                <input type="tel" id="phone" placeholder="Phone number">
+                <input type="number" id="age" placeholder="Age">
+            <select name="" id="gender">
+                <option value="" selected disabled>Gernder</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+            </select>
+            </div>
+            <div class="price">
+                <input type="text" id="name-sport" placeholder="Name Sport">
+                <input onkeyup="gettotal()" type="number" id="Price per month" placeholder="Price per month">
+                <input onkeyup="gettotal()" type="number" id="number of month" placeholder="Number of month">
+                <input onkeyup="gettotal()" type="number" id="Offer" placeholder="Offer">
+                <small id="total"></small>
+                
+            </div>
+            <button id="submit">Create</button>
+        </div>
+
+        <div class="outputs">
+            <div class="searchblock">
+                <input type="search" id="search" placeholder="Search">
+            </div>
+            <div class="btnsearch">
+                <button id="searchname">search by name</button>
+                <button id="searchid">search by National ID</button>
+            </div>
+            <div id="deleteall"></div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>National ID</th>
+                    <th>Phone No.</th>
+                    <th>Name Sport</th>
+                    <th>Age</th>
+                    <th>Price per month</th>
+                    <th>Number of month</th>
+                    <th>Offer</th>
+                    <th>total</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="landclub.js"></script>
+</body>
+</html>
